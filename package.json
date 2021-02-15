@@ -4,7 +4,7 @@
     "description": "endabgabe",
     "main": "index.js",
     "scripts": {
-        "start": "node Endabgabe/server.js remote"
+        "start": "node code/server.js remote"
     },
     "repository": {
         "type": "git",
