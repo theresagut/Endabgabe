@@ -12,7 +12,7 @@ namespace feuerwerkEndabgabe {
   
   
     async function handleLoad(_event: Event): Promise<void> {
-      console.log("HalloWelt");
+      console.log("HalloWelt"); 
   
       let response: Response = await fetch(serverPage + "?" + "command=getTitels");
       let listOfTitels: string = await response.text();
@@ -207,4 +207,4 @@ namespace feuerwerkEndabgabe {
       meter.value = parseFloat(target.value);
   
     }
-}
+  }
