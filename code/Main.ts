@@ -1,6 +1,6 @@
 namespace feuerwerkEndabgabe {
     window.addEventListener("load", handleLoad);
-    let serverPage: string = "https://eia-endabgabe.herokuapp.com"; //"http://localhost:5001/" wenn man es lokal machen möchte;
+    let serverPage: string = "https://eia-endabgabe.herokuapp.com/"; //"http://localhost:5001/";
     let form: HTMLFormElement;
     let quantity: number;
     let color: string;
@@ -12,7 +12,7 @@ namespace feuerwerkEndabgabe {
   
   
     async function handleLoad(_event: Event): Promise<void> {
-      console.log("HalloWelt"); 
+      console.log("HalloWelt");
   
       let response: Response = await fetch(serverPage + "?" + "command=getTitels");
       let listOfTitels: string = await response.text();
@@ -207,4 +207,4 @@ namespace feuerwerkEndabgabe {
       meter.value = parseFloat(target.value);
   
     }
-  }
+}
